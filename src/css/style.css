@@ -1,0 +1,63 @@
+html, body, #app, .home {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+a {
+    margin: 10px;
+}
+
+.home {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.home h1 {
+
+}
+
+.page {
+    position: absolute;
+    top: 100px;
+}
+
+.page.page-enter * {
+    opacity: 0;
+    transition: all 0.5s ease-out 0.5s;
+}
+
+.page.page-enter.page-enter-active * {
+    opacity: 1;
+}
+
+.page.page-leave * {
+    opacity: 1;
+    transition: all 500ms linear;
+}
+
+.page.page-leave.page-leave-active * {
+    opacity: 0;
+}
+
+.nav {
+    transition: all 0.5s ease;
+}
+
+.nav-hidden {
+    opacity: 0;
+}
+
+.nav-visible {
+    opacity: 1;
+}
